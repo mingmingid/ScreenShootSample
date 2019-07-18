@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EPg-Zq-pcP" userLabel="Scroll View News">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2019-07-03 at 11.45.11" translatesAutoresizingMaskIntoConstraints="NO" id="Ebu-3n-axS">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="260"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="260" id="rqY-cj-lmH"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Osp-q4-Nk8">
+                                        <rect key="frame" x="24" y="284" width="366" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9P-rw-xGJ">
+                                        <rect key="frame" x="24" y="348" width="366" height="2394"/>
+                                        <mutableString key="text">In iOS 13.0 and later, people can choose to adopt a dark system-wide appearance called Dark Mode. In Dark Mode, the system uses a darker color palette for all screens, views, menus, and controls, and it uses more vibrancy to make foreground content stand out against the darker backgrounds. Dark Mode supports all accessibility features.
+
+People can choose Dark Mode as their default interface style, and they can use Settings to make their devices automatically switch to Dark Mode when ambient light is low.
+
+Focus on your content. Dark Mode puts the focus on the content areas of your interface, allowing that content to stand out while the surrounding UI recedes into the background.
+
+Test your design in both light and dark appearances. See how your interface looks in both appearances, and adjust your designs as needed to accommodate each one. Designs that work well in one appearance might not work in the other.
+
+Ensure that your content remains comfortably legible in Dark Mode when you adjust the contrast and transparency accessibility settings. In Dark Mode, you should test your content with Increase Contrast and Reduce Transparency turned on, both separately and together. You may find places where dark text is less legible when it’s on a dark background. You might also find that turning on Increase Contrast in Dark Mode can result in reduced visual contrast between dark text and a dark background. Although people with strong vision might still be able to read lower contrast text, such text could be illegible for people with visual impairments. For guidance, see Color and Contrast.
+
+Colors
+The color palette in Dark Mode includes darker background colors and lighter foreground colors that are carefully selected to ensure contrast while maintaining a consistent feel between modes.
+
+Use colors that adapt to the current appearance. Semantic colors, like separator, adapt to the current appearance automatically. When you need a custom color, add a Color Set asset to your app’s asset catalog and specify the light and dark variants of the color so that it can adapt to the current appearance mode. Avoid using hard-coded color values or colors that don’t adapt.
+
+Ensure sufficient color contrast in all appearances. Using system-defined colors ensures a proper contrast ratio between your foreground and background content. For custom colors, aim for a contrast ratio of 7:1, especially for smaller text. For guidance, see Dynamic System Colors.
+
+Soften the color of white backgrounds. If you must use a white background for your content in Dark Mode, choose a slightly darker white that prevents the background from glowing against the surrounding dark content.
+
+For related guidance, see Color.
+
+Image, Icon, and Symbol Color
+The system uses SF Symbols, which automatically look great in Dark Mode, and full-color images that are optimized for both light and dark appearances.
+
+Use SF Symbols wherever possible. Symbols look great in both appearance modes when you use dynamic colors to tint them or when you add vibrancy.
+
+Design individual glyphs for light and dark appearances when necessary. A glyph that uses a hollow outline in light mode might look better as a solid, filled shape in Dark Mode.
+
+Make sure full-color images and icons look good. Use the same asset if it looks good in both light and dark modes. If an asset looks good in only one mode, modify the asset or create separate light and dark assets. Use asset catalogs to combine your assets into a single, named image.
+
+Text Color
+Vibrancy can help maintain good contrast of text on darker backgrounds.
+
+Use the system-provided label colors for labels. The primary, secondary, tertiary, and quaternary label colors adapt automatically to light and dark appearances. For related guidance, see Typography.
+
+Use system views to draw text fields and text views. System views and controls make your app’s text look good on all backgrounds, adjusting automatically for the presence or absence of vibrancy. Don’t draw text yourself when you could use a system-provided view to display that text instead. For developer guidance, see UITextField and UITextView.</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Osp-q4-Nk8" secondAttribute="trailing" constant="24" id="5Fd-rr-g7R"/>
+                                    <constraint firstItem="k9P-rw-xGJ" firstAttribute="top" secondItem="Osp-q4-Nk8" secondAttribute="bottom" constant="24" id="661-5G-clj"/>
+                                    <constraint firstItem="k9P-rw-xGJ" firstAttribute="leading" secondItem="Osp-q4-Nk8" secondAttribute="leading" id="GTJ-Bx-hau"/>
+                                    <constraint firstItem="Ebu-3n-axS" firstAttribute="centerX" secondItem="EPg-Zq-pcP" secondAttribute="centerX" id="NhA-II-cvH"/>
+                                    <constraint firstItem="k9P-rw-xGJ" firstAttribute="trailing" secondItem="Osp-q4-Nk8" secondAttribute="trailing" id="ONj-Rj-yxd"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ebu-3n-axS" secondAttribute="trailing" id="bC8-mO-feL"/>
+                                    <constraint firstItem="Osp-q4-Nk8" firstAttribute="leading" secondItem="EPg-Zq-pcP" secondAttribute="leading" constant="24" id="bWy-DV-oN9"/>
+                                    <constraint firstAttribute="bottom" secondItem="k9P-rw-xGJ" secondAttribute="bottom" constant="24" id="iIf-Sp-hr2"/>
+                                    <constraint firstItem="Osp-q4-Nk8" firstAttribute="top" secondItem="Ebu-3n-axS" secondAttribute="bottom" constant="24" id="vMi-Q5-IVV"/>
+                                    <constraint firstItem="Ebu-3n-axS" firstAttribute="leading" secondItem="EPg-Zq-pcP" secondAttribute="leading" id="vqL-tF-Gd0"/>
+                                    <constraint firstItem="Ebu-3n-axS" firstAttribute="top" secondItem="EPg-Zq-pcP" secondAttribute="top" id="yOU-w0-4pM"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EPg-Zq-pcP" secondAttribute="bottom" id="8js-H3-qil"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EPg-Zq-pcP" secondAttribute="trailing" id="aJs-Ub-p2N"/>
+                            <constraint firstItem="EPg-Zq-pcP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mRy-8Z-2GM"/>
+                            <constraint firstItem="EPg-Zq-pcP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rdc-U1-ZnS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="115.84821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Screen Shot 2019-07-03 at 11.45.11" width="292" height="250"/>
+    </resources>
+</document>
